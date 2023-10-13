@@ -1,26 +1,29 @@
 /* variables */
 :root {
+    --main-color-background: #FFF;
     --font-color-main: #000;
     --font-color-hover: #333;
+    --font-color-lighter-hover: #EEE;
+    --hover-gradient: linear-gradient(var(--main-color-background) 40%, var(--font-color-lighter-hover)); 
 }
 
 /* fonts */
 
 @font-face {
     font-family: "Computer Modern";
-    src: url(../resources/CMUNRM.OTF);
+    src: url(../resources/fonts/CMUNRM.OTF);
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Computer Modern";
-    src: url(../resources/CMUNBX.OTF);
+    src: url(../resources/fonts/CMUNBX.OTF);
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Computer Modern";
-    src: url(../resources/CMUNTI.OTF);
+    src: url(..s/resources/fonts/CMUNTI.OTF);
     font-weight: normal;
     font-style: italic;
 }
@@ -60,7 +63,7 @@ body {
 /* main box */
 .main-box {
     margin: auto;
-    width: 80%;
+    width: 47.2rem;
 }
 
 /* header */
@@ -76,15 +79,28 @@ body {
 }
 
 /* navigation */
+.navigation {
+    max-width: 47.2rem;
+}
+
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 65%;
+    margin-left: auto;
     font-size: 1.5rem;
     font-weight: bold;
-    max-width: 30.4rem;
 }
 
-.spacer {
-    width: 16rem;
+nav a {
+    flex-grow: 1;
+    margin: .5rem;
+    border-bottom: .12rem solid var(--font-color-main);
+    transition: all 200ms linear;
+}
+
+nav a:hover {
+    border-bottom: .12rem solid var(--font-color-hover-lighter);
+    color: var(--font-color-hover-lighter);
 }
