@@ -156,19 +156,39 @@ nav a:hover {
     flex-direction: row;
 }
 
-.vert {
-    flex-direction: column;
-}
-
 .blocks:last-of-type {
     margin-bottom: 10rem;
 }
 
+
 .blocks img {
     max-width: 35%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
     padding-right: 3%;
 }
+.blocks p {
+    width: 35%;
+}
 
+.blocks ul {
+    width: 30%;
+    font-size: .80rem;
+    list-style-position: inside
+}
+
+.blocks ul li:first-of-type {
+    list-style: none;
+    font-size: 1rem;
+}
+
+.vert {
+    flex-direction: column;
+}
+
+.vert p {
+    width: 100%;
+}
 /* responsive css */
 @media screen and (orientation: portrait) and (max-width: 47.2rem) {
     .long-name {
@@ -206,7 +226,15 @@ nav a:hover {
     }
 
     .blocks img {
-        max-width: 60%;
+        max-width: 80%;
+    }
+
+    .blocks p {
+        width: 100%;
+    }
+
+    .blocks ul {
+        width: 100%;
     }
 
     #nipper {
