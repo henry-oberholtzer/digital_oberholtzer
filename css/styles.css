@@ -2,7 +2,9 @@
 :root {
     --main-color-background: #FFF;
     --font-color-main: #000;
+    --font-color-main-lt: #333;
     --font-color-hover: #666;
+    
 }
 
 /* fonts */
@@ -30,7 +32,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    /* border: 1px solid red; */
 }
 
 html {
@@ -46,10 +47,15 @@ a {
     color: var(--font-color-main);
 }
 
+p a {
+    font-weight: bold;
+    color: var(--font-color-main-lt);
+}
+
 a:hover {
     text-decoration: none;
     color: var(--font-color-hover);
-    transition: color 300ms ease;
+    transition: color 500ms ease;
 }
 
 body {
@@ -90,8 +96,10 @@ nav {
     justify-content: space-between;
     max-width: 65%;
     margin-left: auto;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
     font-weight: bold;
+    
 }
 
 nav a {
@@ -104,6 +112,12 @@ nav a {
 nav a:hover {
     border-bottom-color: var(--font-color-hover);
     color: var(--font-color-hover);
+}
+
+/* content div */
+
+.content p {
+    margin-bottom: 2rem;
 }
 
 /* responsive css */
@@ -124,6 +138,7 @@ nav a:hover {
         flex-direction: column;
         text-align: left;
         margin: auto;
+        margin-bottom: 2rem;
         max-width: 100%;
     }
 
