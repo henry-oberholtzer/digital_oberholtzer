@@ -64,14 +64,27 @@ body {
 }
 
 /* header */
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo {
     text-transform: lowercase;
     font-size: 2.6rem;
+    margin-bottom: -2rem;
 }
 
-nav a {
+/* navigation */
+nav {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 1.5rem;
     font-weight: bold;
-    width:
+    max-width: 30.4rem;
+}
+
+.spacer {
+    width: 16rem;
 }
