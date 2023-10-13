@@ -129,6 +129,14 @@ nav a:hover {
     margin-bottom: 2rem;
 }
 
+/* id */
+#nipper {
+    float: right;
+    display: inline;
+    max-width: 25%;
+    opacity: .75;
+}
+
 /* container & blocks div */
 .title {
     display: flex;
@@ -146,6 +154,14 @@ nav a:hover {
 .blocks {
     display: flex;
     flex-direction: row;
+}
+
+.vert {
+    flex-direction: column;
+}
+
+.blocks:last-of-type {
+    margin-bottom: 10rem;
 }
 
 .blocks img {
@@ -191,5 +207,13 @@ nav a:hover {
 
     .blocks img {
         max-width: 60%;
+    }
+
+    #nipper {
+        display: flex;
+        float: none;
+        margin: auto;
+        margin-bottom: 2rem;
+        max-width: 50%;
     }
 }
