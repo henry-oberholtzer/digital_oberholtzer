@@ -4,11 +4,32 @@
     --font-color-hover: #333;
 }
 
+/* fonts */
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url(../resources/CMUNRM.OTF);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url(../resources/CMUNBX.OTF);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url(../resources/CMUNTI.OTF);
+    font-weight: normal;
+    font-style: italic;
+}
+
 /* full page css */
 * {
     box-sizing: border-box;
     margin: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html {
@@ -16,7 +37,9 @@ html {
     height: 100vh;
     max-width: 100%;
     max-height: 100%;
+    font-family: "Computer Modern", "Georgia", "Times New Roman", serif;
 }
+
 a {
     text-decoration: none;
     color: var(--font-color-main);
@@ -36,7 +59,19 @@ body {
 
 /* main box */
 .main-box {
-    aspect-ratio: 1.5 / 1;
-    max-width: 60vw;
     margin: auto;
+    width: 80%;
+}
+
+/* header */
+.logo {
+    text-transform: lowercase;
+    font-size: 2.6rem;
+}
+
+nav a {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width:
 }
