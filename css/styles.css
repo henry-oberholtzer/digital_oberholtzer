@@ -1,0 +1,42 @@
+/* variables */
+:root {
+    --font-color-main: #000;
+    --font-color-hover: #333;
+}
+
+/* full page css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid red;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+a {
+    text-decoration: none;
+    color: var(--font-color-main);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--font-color-hover);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+}
+
+/* main box */
+.main-box {
+    aspect-ratio: 1.5 / 1;
+    max-width: 60vw;
+    margin: auto;
+}
