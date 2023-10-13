@@ -4,7 +4,7 @@
     --font-color-main: #000;
     --font-color-main-lt: #333;
     --font-color-hover: #666;
-    
+
 }
 
 /* fonts */
@@ -69,6 +69,7 @@ em {
     position: relative;
     bottom: -.5rem;
 }
+
 /* main box */
 .main-box {
     margin: auto;
@@ -104,7 +105,7 @@ nav {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     font-weight: bold;
-    
+
 }
 
 nav a {
@@ -162,24 +163,30 @@ nav a:hover {
 
 
 .blocks img {
-    max-width: 35%;
+    max-width: 32%;
     object-fit: cover;
     aspect-ratio: 1 / 1;
-    padding-right: 3%;
+    margin-right: 3%;
+    border-radius: .5rem;
 }
+
 .blocks p {
     width: 35%;
 }
 
-.blocks ul {
+.blocks ul,
+.blocks ol {
     width: 30%;
     font-size: .80rem;
-    list-style-position: inside
+    list-style-position: inside;
+    line-height: 2rem;
 }
 
-.blocks ul li:first-of-type {
+.blocks ul li:first-of-type,
+.blocks ol li:first-of-type {
     list-style: none;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .vert {
@@ -189,6 +196,7 @@ nav a:hover {
 .vert p {
     width: 100%;
 }
+
 /* responsive css */
 @media screen and (orientation: portrait) and (max-width: 47.2rem) {
     .long-name {
@@ -198,7 +206,7 @@ nav a:hover {
         text-indent: 100%;
         overflow: hidden;
     }
-    
+
     .main-box {
         margin: 10%;
         margin-top: 20vh;
