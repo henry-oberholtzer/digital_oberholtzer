@@ -65,12 +65,17 @@ body {
     height: 100%;
 }
 
+em {
+    position: relative;
+    bottom: -.5rem;
+}
 /* main box */
 .main-box {
     margin: auto;
     width: 47.2rem;
-    position: relative;
-    top: -20vh;
+    position: aboslute;
+    margin-top: 20vh;
+    height: 100%;
 }
 
 /* header */
@@ -116,8 +121,36 @@ nav a:hover {
 
 /* content div */
 
+.content {
+    overflow: auto;
+}
+
 .content p {
     margin-bottom: 2rem;
+}
+
+/* container & blocks div */
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: .12rem solid var(--font-color-hover);
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.title:first-of-type {
+    margin-top: 2rem;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: row;
+}
+
+.blocks img {
+    max-width: 35%;
+    padding-right: 3%;
 }
 
 /* responsive css */
@@ -132,6 +165,8 @@ nav a:hover {
     
     .main-box {
         margin: 10%;
+        margin-top: 20vh;
+        height: 100%;
     }
 
     nav {
@@ -148,5 +183,13 @@ nav a:hover {
 
     .logo {
         text-align: left;
+    }
+
+    .blocks {
+        flex-direction: column;
+    }
+
+    .blocks img {
+        max-width: 60%;
     }
 }
