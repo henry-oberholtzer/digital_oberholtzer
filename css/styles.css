@@ -2,9 +2,7 @@
 :root {
     --main-color-background: #FFF;
     --font-color-main: #000;
-    --font-color-hover: #333;
-    --font-color-lighter-hover: #EEE;
-    --hover-gradient: linear-gradient(var(--main-color-background) 40%, var(--font-color-lighter-hover)); 
+    --font-color-hover: #666;
 }
 
 /* fonts */
@@ -51,6 +49,7 @@ a {
 a:hover {
     text-decoration: none;
     color: var(--font-color-hover);
+    transition: color 300ms ease;
 }
 
 body {
@@ -64,6 +63,8 @@ body {
 .main-box {
     margin: auto;
     width: 47.2rem;
+    position: relative;
+    top: -20vh;
 }
 
 /* header */
@@ -97,10 +98,40 @@ nav a {
     flex-grow: 1;
     margin: .5rem;
     border-bottom: .12rem solid var(--font-color-main);
-    transition: all 200ms linear;
+    transition: all 200ms;
 }
 
 nav a:hover {
-    border-bottom: .12rem solid var(--font-color-hover-lighter);
-    color: var(--font-color-hover-lighter);
+    border-bottom-color: var(--font-color-hover);
+    color: var(--font-color-hover);
+}
+
+/* responsive css */
+@media screen and (orientation: portrait) and (max-width: 47.2rem) {
+    .long-name {
+        display: flex;
+        height: 0;
+        width: 0;
+        text-indent: 100%;
+        overflow: hidden;
+    }
+    
+    .main-box {
+        margin: 10%;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: left;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    .logo {
+        text-align: left;
+    }
 }
