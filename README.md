@@ -25,7 +25,12 @@ An adaptive webpage written with HTML and CSS, containing links to my work acros
 ## Known Bugs
 
 * Screen may not adapt perfectly between devices
-* Fonts do not scale between screen sizes
+* Fonts do not scale between screen sizes, causing two lines for title
+* On mobile, nav buttons do not change color when touched.
+* On mobile, the dates on the content sections are misaligned. 
+* On mobile, the list element is misaligned.
+* Certain links need to be set to open in a new tab
+
 
 ## Upcoming Features
 
