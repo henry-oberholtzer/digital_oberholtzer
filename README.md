@@ -20,7 +20,7 @@ An adaptive webpage written with HTML and CSS, containing links to my work acros
 
 ## Link to Site
 
-[www.henryoberholtzer.com](https://wwww.henryoberholtzer.com)
+[www.henryoberholtzer.com](https://www.henryoberholtzer.com)
 
 ## Known Bugs
 
