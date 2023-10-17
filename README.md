@@ -39,6 +39,7 @@ An adaptive webpage written with HTML and CSS, containing links to my work acros
 * DJ sets
 * Footer
 * Possible JavaScript implementation
+* On link hover on mobile, nav links shift right out of way
 
 ## License
 
